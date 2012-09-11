@@ -220,7 +220,7 @@ EOT;
         }
 
         foreach( $paths as $path ) {
-            $file_path = $this->path('views') . str_replace('.', '/', $path) . '.blade.php';
+            $file_path = $this->path('views') . str_replace('.', '/', $path) . '.php';
             self::$content = "This is the $file_path view";
             $this->write_to_file($file_path);
         }
